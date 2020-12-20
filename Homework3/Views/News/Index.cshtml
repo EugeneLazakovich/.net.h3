@@ -1,0 +1,41 @@
+﻿<body>
+    <table>
+        <tr>
+            <td>
+                Id
+            </td>
+            <td>
+                Title
+            </td>
+            <td>
+                Text
+            </td>
+            <td>
+                AuthorName
+            </td>
+            <td>
+                IsFake
+            </td>
+        </tr>
+        @foreach (var row in ViewBag.News)
+        {
+        <tr>
+            <td>
+                @row.Id
+            </td>
+            <td>
+                @row.Title
+            </td>
+            <td>
+                @row.Text
+            </td>
+            <td>
+                @row.AuthorName
+            </td>
+            <td>
+                @row.IsFake
+            </td>
+        </tr>
+        }
+    </table>
+</body>
